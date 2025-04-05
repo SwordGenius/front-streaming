@@ -25,7 +25,7 @@ const UploadForm = () => {
         formData.append('metadata', JSON.stringify({ title, description }));
 
         try {
-            await axios.post('http://localhost:3001/video', formData, {
+            await axios.post('https://redes-back.cundacraft.me/video', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
