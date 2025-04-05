@@ -42,20 +42,20 @@ const AuthForm = ({ type }) => {
                     {type === 'register' && (
                         <input
                             className="auth-form-input"
-                            type="text"
-                            name="username"
-                            placeholder="Username"
-                            value={formData.username}
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            value={formData.email}
                             onChange={handleChange}
                             required
                         />
                     )}
                     <input
                         className="auth-form-input"
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        value={formData.email}
+                        type="text"
+                        name="username"
+                        placeholder="Username"
+                        value={formData.username}
                         onChange={handleChange}
                         required
                     />
